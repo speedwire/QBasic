@@ -1,0 +1,23 @@
+FOR I = 1 TO 4
+    READ NAME$, DEPT$, Purchase
+    IF DEPT$ = "D1" THEN
+        TotalPurchase = TotalPurchase + Purchase
+        D1COUNT = D1COUNT + 1
+    END IF
+    IF DEPT$ = "D2" THEN
+        TotalPurchase2 = TotalPurchase2 + Purchase
+        D2COUNT = D2COUNT + 1
+    END IF
+
+NEXT I
+Average = TotalPurchase / D1COUNT
+Average2 = TotalPurchase2 / D2COUNT
+
+PRINT "D1 Average"; Average
+PRINT "D2 Average"; Average2
+
+
+DATA frank,D1,50
+DATA ANN,D1,40
+DATA Carlos,D2,35
+DATA MARY,D2,70

@@ -1,0 +1,12 @@
+FOR I = 1 TO 5
+    READ myname$, mynumber, who$
+    IF myname$ = "frank" THEN frankct = frankct + 1
+NEXT I
+PRINT "frank appeared", frankct
+
+DATA frank,447,allen
+DATA sud,9,frank
+DATA frank,14,mary
+DATA joe,99,john
+DATA pete,14,carlos
+

@@ -1,0 +1,3 @@
+INPUT "ENTER 2 NUMBERS:", A, B
+IF A > B THEN PRINT "A Biggest"
+IF B > A THEN PRINT "B Biggest"

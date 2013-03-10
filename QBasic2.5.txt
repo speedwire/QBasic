@@ -1,0 +1,14 @@
+HIPURCHASE = 100
+
+
+FOR I = 1 TO 4
+    READ NAME$, DEPT$, Purchase
+    TotalPurchase = TotalPurchase + Purchase
+NEXT I
+PRINT "Total Purchase"; TotalPurchase
+
+
+DATA frank,D1,50
+DATA ANN,D1,40
+DATA Carlos,D2,35
+DATA MARY,D2,70

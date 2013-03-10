@@ -1,0 +1,4 @@
+INPUT "Enter First #:", A
+INPUT "Enter Second #:", B
+IF A > B THEN PRINT "A Biggest"
+IF B > A THEN PRINT "B Biggest"

@@ -1,0 +1,16 @@
+FOR I = 1 TO 2
+    READ NAME$, DEPT$, Purchase
+    IF DEPT$ = "D1" THEN D1Total = Total + Purchase
+    PRINT "D1 Total:", D1Total
+NEXT I
+
+FOR I = 1 TO 2
+    READ NAME$, DEPT$, Purchase
+    IF DEPT$ = "D2" THEN D2Total = Total + Purchase
+    PRINT "D2 Total:", D2Total
+NEXT I
+
+DATA frank,D1,50
+DATA ANN,D1,40
+DATA Carlos,D2,35
+DATA MARY,D2,50
