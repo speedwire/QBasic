@@ -1,0 +1,38 @@
+FOR I = 1 TO 10
+    READ DEPT$, Purchase
+    IF DEPT$ = "A1" THEN
+        TotalPurchase = TotalPurchase + Purchase
+        D1COUNT = D1COUNT + 1
+    END IF
+    IF DEPT$ = "B2" THEN
+        TotalPurchase2 = TotalPurchase2 + Purchase
+        D2COUNT = D2COUNT + 1
+    END IF
+    IF DEPT$ = "B4" THEN
+        TotalPurchase3 = TotalPurchase3 + Purchase
+        D3COUNT = D3COUNT + 1
+    END IF
+
+
+NEXT I
+Average = TotalPurchase / D1COUNT
+Average2 = TotalPurchase2 / D2COUNT
+Average3 = TotalPurchase3 / D3COUNT
+
+PRINT "A1 Average"; Average
+PRINT "B2 Average"; Average2
+PRINT "B4 Average"; Average3
+
+
+DATA A1,44
+DATA B2,50
+DATA B2,33
+DATA A1,25
+DATA A1,40
+DATA B2,28
+DATA B2,30
+DATA B4,25
+DATA B4,50
+DATA B4,32
+
+
