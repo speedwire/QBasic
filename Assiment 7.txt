@@ -1,0 +1,36 @@
+PRINT "                    Bank1          Bank2          Bank3"
+PRINT "Interest Rates     0.06875        0.0675         0.06625"
+PRINT "Compounded         Annually       Semiannually   quarterly"
+PRINT ""
+INPUT "Pick Bank ", B
+INPUT "Principal ", A
+
+IF B = 1 THEN C = 0.06875
+IF B = 1 THEN D = 750 * 0.06875
+IF B + 1 THEN Amount = D + A
+
+IF B = 2 THEN C = 0.0675
+IF B = 2 THEN D.2 = 750 * C
+IF B = 2 THEN D.2.1 = D.2 + 750
+IF B = 2 THEN D.1 = D2.1 * C
+IF B = 2 THEN D = D.2 + D.1
+IF B = 2 THEN Amount = D + A
+
+IF B = 3 THEN C = 0.06625
+IF B = 3 THEN D.4 = 750 * C
+IF B = 3 THEN D.4.1 = D.4 + 750
+IF B = 3 THEN D.3 = D4.1 * C
+IF B = 3 THEN D.3.1 = D.3 + 750
+IF B = 3 THEN D.2 = D.3.1 * C
+IF B = 3 THEN D.2.1 = D.2 + 750
+IF B = 3 THEN D.1 = D.2.1 * C
+IF B = 3 THEN D.1.1 = D.1 + 750
+IF B = 3 THEN Amount = D + A
+IF B = 3 THEN D = D.4 + D.3 + D.2 + D.1
+
+
+PRINT "Bank # ===========>"; B
+PRINT "Principal ========>"; A
+PRINT "Rate =============>"; C
+PRINT "Interest =========>"; D
+PRINT "Bank1 Intrest ====>"; Amount
